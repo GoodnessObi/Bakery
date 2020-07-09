@@ -1,21 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 
 .body {
 	font-family: 'Montserrat', sans-serif;
 }
+
+.section-heading {
+	color: #f96f00;
+	font-size: 1.25rem;
+}
 /* header */
 .jumbotron-custom {
 	background-image: url('../images/Rectangle\ 112.png');
-	height: 90vh;
+	height: 100vh;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
+	/* z-index: -1; */
+	/* display: flex; */
 }
 
 .header-text {
 	color: #ffffff;
+	display: flex;
+	justify-content: center;
+}
+
+.header-text h1 {
+	padding-top: 30%;
+	text-align: center;
 }
 /*navbar*/
-.navbar custom {
+.navbar custom .nav-link {
 	color: #ffffff;
 }
 
@@ -24,6 +38,24 @@
 .services {
 	background-color: #f7f7f7;
 }
+
+.display-area {
+	overflow-x: hidden;
+}
+
+.carousel-wrapper {
+	display: flex;
+}
+
+.carousel-card {
+	/* height: 200px; */
+	/* background-color: rgba(0, 0, 0, 0.4); */
+	/* color: white; */
+	/* font-size: 40px; */
+	/* margin: 10px; */
+	flex: 200px 0 0;
+}
+
 /*gallery*/
 .gallery-img {
 	width: 100%;
@@ -39,12 +71,47 @@
 .footer {
 	background-color: #171717;
 	color: #ffffff;
+	font-weight: 300;
+}
+
+.footer #web-footer {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.footer .social-media-link {
+	color: #ffffff;
+}
+
+.footer .color-orange {
+	color: #f96f00;
+}
+
+.footer .copyright {
+	font-size: 0.75rem;
+}
+
+.footer .footer-p {
+	font-size: 0.8rem;
+	font-weight: 300;
+}
+
+.footer .bold {
+	font-weight: 500;
+}
+
+#mobile-footer {
+	display: none;
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
 	.jumbotron-custom {
 		background-size: cover;
 		background-position: center;
+	}
+
+	#mobile-footer {
+		display: none;
 	}
 }
 
@@ -53,11 +120,39 @@
 		background-size: cover;
 		background-position: center;
 	}
+	#mobile-footer {
+		display: block;
+	}
+
+	#web-footer {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 576px) {
 	.jumbotron-custom {
 		background-size: cover;
 		background-position: 40% 30%;
+	}
+
+	.header-text {
+		color: #ffffff;
+		justify-content: left;
+		padding-top: 3rem;
+	}
+
+	.header-text h1 {
+		width: 60%;
+		padding-top: 0;
+		font-size: 2.75rem;
+		text-align: left;
+	}
+
+	#mobile-footer {
+		display: block;
+	}
+
+	#web-footer {
+		display: none;
 	}
 }
