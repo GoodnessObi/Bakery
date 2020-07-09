@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+.body {
+	font-family: 'Montserrat', sans-serif;
+}
+/* header */
+.jumbotron-custom {
+	background-image: url('../images/Rectangle\ 112.png');
+	height: 90vh;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.header-text {
+	color: #ffffff;
+}
+/*navbar*/
+.navbar custom {
+	color: #ffffff;
+}
+
+/*about*/
+/*services*/
+.services {
+	background-color: #f7f7f7;
+}
+/*gallery*/
+.gallery-img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+/*blog*/
+.blog {
+	background-color: #f7f7f7;
+}
+/*contact*/
+/*footer*/
+.footer {
+	background-color: #171717;
+	color: #ffffff;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+	.jumbotron-custom {
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+	.jumbotron-custom {
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.jumbotron-custom {
+		background-size: cover;
+		background-position: 40% 30%;
+	}
+}
