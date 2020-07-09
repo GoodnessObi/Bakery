@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Team-Avengers-Envato-Food-3
 
 ## Steps to working on this repo.
@@ -22,3 +23,6 @@
 
 for more information on git workflow kindly look [here](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
+=======
+# templates
+>>>>>>> develop
