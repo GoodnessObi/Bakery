@@ -71,6 +71,7 @@
 
 .blog .alternate-background {
 	background-image: url('../images/Rectangle\ 13.svg');
+	/* background-size: 100% 100%; */
 	color: #ffffff;
 }
 
@@ -185,14 +186,13 @@
 		background-size: cover;
 		background-position: center;
 	}
+
 	#mobile-footer {
 		display: block;
 	}
 
-	#web-footer {
-		display: none;
-	}
-
+	#web-footer,
+	#web-about,
 	.blog .web-blog-post {
 		display: none;
 	}
@@ -222,7 +222,8 @@
 	}
 
 	#web-footer,
-	#web-contact {
+	#web-contact,
+	#web-about {
 		display: none;
 	}
 
