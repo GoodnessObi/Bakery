@@ -39,3 +39,12 @@ $('.slick-slider').slick({
 		// instead of a settings object
 	],
 });
+
+//navbar on scroll
+$(function () {
+	$(document).scroll(function () {
+		var $nav = $('.navbar.fixed-top');
+		$nav.toggleClass('scrolled', $(this).scrollTop() > 200);
+	});
+});
+// $nav.height()
