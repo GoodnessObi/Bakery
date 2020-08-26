@@ -68,12 +68,13 @@ body {
 }
 
 /* client container */
-.client-custom {
+/* .client-custom {
 	background-image: url('../images/Rectangle\ 2.png');
 	background-repeat: no-repeat;
-	/* background-position: cover; */
 	background-size: 100% 100%;
+	background-position: center;
 	font-size: 1.5rem;
+	min-height: 60vh;
 }
 
 .client-custom .numbers {
@@ -84,17 +85,17 @@ body {
 
 .client-custom .whole {
 	/* border: 3px solid black; */
-	max-height: 30%;
-	line-height: normal;
+	/* max-height: 30%;
+	line-height: normal; */
 	/* height: 100%; */
 }
 
-.client-custom .pink-border {
+/* .client-custom .pink-border {
 	border-right: 4px solid #f50057;
-}
+}  */
 
 /* Our services */
-.card-img-top {
+/* .card-img-top {
 	width: 5rem;
 }
 
@@ -106,10 +107,10 @@ body {
 .more,
 .card-title {
 	color: #f50057;
-}
+} */
 
 /* Team */
-.our-team {
+/* .our-team {
 	background: linear-gradient(
 			228.09deg,
 			#f50057 34.75%,
@@ -117,12 +118,12 @@ body {
 		),
 		rgba(131, 63, 87, 0.75);
 	color: #ffffff;
-}
+} */
 
 /* .our-team-container {
 	position: relative;
 } */
-.our-team-img {
+/* .our-team-img {
 	position: relative;
 	opacity: 0.5;
 }
@@ -149,14 +150,14 @@ body {
 	/* display: none; */
 }
 
-.text {
+/* .text {
 	color: white;
 	font-size: 1.25rem;
 	line-height: normal;
-}
+}  */
 
 /* testimonials */
-.testimonials .testimonial-img {
+/* .testimonials .testimonial-img {
 	border-radius: 50%;
 	width: auto;
 	position: relative;
@@ -184,10 +185,10 @@ body {
 .testimonials .testimonial-img:active,
 .testimonials .testimonial-img:hover {
 	opacity: 1;
-}
+} */
 
 /* foooter */
-footer {
+/* footer {
 	background: linear-gradient(
 			153.9deg,
 			#f50057 4.84%,
@@ -215,21 +216,39 @@ footer {
 footer .copyright {
 	color: #000000;
 	border-left: 1px solid black;
-}
+} */
 
 /* ≥768px */
 /* ≥576px */
 /* 992 */
+@media screen and (max-width: 1280px) and (min-width: 992px) {
+	/* body {
+		background-color: rgb(114, 102, 126);
+	} */
+	.client-custom {
+		background-size: cover;
+		background-position: center;
+	}
+}
+
 @media screen and (max-width: 992px) and (min-width: 768px) {
 	/* body {
 		background-color: rgb(114, 102, 126);
 	} */
+	.client-custom {
+		background-size: cover;
+		background-position: center;
+	}
 }
 
 @media screen and (max-width: 768px) and (min-width: 576px) {
 	/* body {
 		background-color: yellow;
 	} */
+	.client-custom {
+		background-size: cover;
+		background-position: center;
+	}
 
 	.client-custom .pink-border {
 		border-right: none;
@@ -240,6 +259,10 @@ footer .copyright {
 	/* body {
 		background-color: green;
 	} */
+	.client-custom {
+		background-size: cover;
+		background-position: center;
+	}
 
 	.client-custom .pink-border {
 		border-right: none;
