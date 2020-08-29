@@ -169,6 +169,7 @@ section {
 @media (min-width: 45em) {
 	.product {
 		text-align: left;
+		margin-bottom: 9em;
 	}
 
 	.product-title {
